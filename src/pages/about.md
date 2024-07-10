@@ -3,34 +3,25 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
-
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
-
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+Hey there, I’m Stephen Wu. I’m currently a student at NYU with concentrations in finance and data science/computing and a minor in creative writing. My experiences primarily lie in data science, with a focus on machine learning research for medicine and health. Currently, I'm an intern doing biostatistics research at Mayo Clinic and I'm involved with game design for an upcoming health and mindfulness game.
 
 <div>
   <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
 </div>
 
-## Tech Stack
+## About this blog
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+This blog is a collection of my various writings about media, particularly games. Each post is of varying length, with topics ranging from essays about League of Legends and Teamfight Tactics to personal writing pieces.
 
-## Features
+## Interests
 
-Here are certain features of this site.
+- Game design
+- Data science
+- Machine learning/Deep learning
+- Hobbies
+- Books (sci-fi/fantasy)
+- Manga (romcoms)
+- Gaming (League of Legends, Teamfight Tactics, modded Minecraft)
 
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
-
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+If you like this theme, you can star/contribute to the [repo](https://github.com/peachfuzzz/steffnstuff-blog).  
+Or you can even give any feedback via my [email](mailto:pearfuzzz@gmail.com).
