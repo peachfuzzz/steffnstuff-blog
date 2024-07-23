@@ -38,9 +38,7 @@ description: "A set of manga that I've read and liked"
 
 # Manga Recommendations
 
-I’ve been an avid reader of manga for a while now. If a romcom was published within the past five years, there’s a coin toss’s chance that I’ve given it a glance. I don’t have a comprehensive list of the things I’ve read. I also don’t really review stuff in that sort of way, but I do keep a rough track of how much I enjoyed them.  <div class="tooltip">Hover over me
-  <span class="tooltiptext">Tooltip text</span>
-</div>
+I’ve been an avid reader of manga for a while now. If a romcom was published within the past five years, there’s a coin toss’s chance that I’ve given it a glance. I don’t have a comprehensive list of the things I’ve read. I also don’t really review stuff in that sort of way, but I do keep a rough track of how much I enjoyed them.
 
 
 ## All-Timers
