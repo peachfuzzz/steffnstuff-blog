@@ -12,45 +12,43 @@ tags:
 description: "Commenting on recent system changes in TFT's set 12"
 ---
 
-TFT Set 12, Magic ‘n Mayhem is out on the PBE! Accordingly, with the release of a new set, Riot has made some system changes, and a few with regards to unit stats have stood out to me: the new mana banking system and the inclusion of damage multipliers and resistance in the unit overview. These are both somewhat subtle but very satisfying changes to see, and I wanted to do a little glazing because I need to wet my palate before proceeding to complain in a few patches.
+TFT Set 12, Magic ‘n Mayhem is out on the PBE! Accordingly, with the release of a new set, Riot has made some system changes, and a few with regards to unit stats have stood out to me: the new **mana banking system** and the inclusion of **percent damage multipliers and resistance in the unit overview**. These are both somewhat subtle but very satisfying changes to see, and I wanted to do a little glazing because I need to wet my palate before proceeding to complain about the coming patches.
 
 ## Table of contents
 
 ## Mana banking
-A little while ago, [I wrote a bit regarding mana design in TFT](/posts/shallow-dip-tft-units-and-mana-design). In the essay, I discussed the overall design of mana pools in Set 11, and how they centered around specific sub archetypes, in large part as a consequence of the existing mana system. Ever since the release of TFT, mana has had a pretty standard set of rules. 
+A little while ago, [I wrote a bit regarding mana design in TFT](/posts/shallow-dip-tft-units-and-mana-design). In the essay, I discussed the overall design of mana pools in Set 11, and how they centered around specific sub archetypes, in large part as a consequence of the extant mana system. Ever since the release of TFT, mana has had a pretty standard set of rules. 
 1. Units have some number of starting and maximum mana.
 2. Units gain 10 mana per auto attack. They also gain X% of pre-mitigation damage and Y% of post-mitigation damage as mana. They also periodically gain mana from items, augments, or traits.
 3. When a unit’s current mana surpasses the maximum mana, their mana is set to 0, they are locked out of gaining mana for a set amount of time, and they cast their spell.
 
-In Set 12, this has been changed. Instead of setting mana to 0, units now “bank” any excess mana for after the cast. Previously, all excess mana would be completely wasted and your unit’s efforts would be in vain, but now mana losslessly transitions into your unit’s next spell. Written out again, the rules would look like this:
-1. Units have some number of starting and maximum mana.
-2. Units gain 10 mana per auto attack. They also gain X% of pre-mitigation damage and Y% of post-mitigation damage as mana. They also periodically gain mana from items, augments, or traits.
-3. When a unit’s current mana surpasses the maximum mana, their mana is set to $Current Mana - Max Mana$, they are locked out of gaining mana for a set amount of time, and they cast their spell.
+In Set 12, this has been changed. Instead of setting mana to 0, units now “bank” any excess mana for after the cast. Previously, all excess mana would be completely wasted and your unit’s efforts would be in vain, but now **mana losslessly transitions into your unit’s next spell**. This changes the third rule only:
+- When a unit’s current mana surpasses the maximum mana, their mana is set to $Current Mana - Max Mana$, they are locked out of gaining mana for a set amount of time, and they cast their spell.
 
-~~Despite it rendering much of my previous code and analysis useless,~~ this is a great change! It does a few good things for the game.
+~~Despite it rendering some of my previous code and analysis useless,~~ this is a great change! It does a few good things for the game.
 ### Decreases the importance of knowing weird breakpoints
 #### Items
-The original system was very swingy around thresholds. Previously, excess mana was actively detrimental: you were investing resources into a system that wouldn’t handle overflow, and as such excess mana went to waste. It created a few weird scenarios that were unintuitive to players, especially those who didn’t look at stats websites to figure out best in slot (BIS). Sure, it was obvious that you should itemize a unit with 30 max mana using Blue Buff, but how about 40? Okay, what about 50? And 45? In each of these cases, there was a technically correct but rather unintuitive answer (if you’re curious, it’s Blue Buff + Shojin, Blue Buff, Shojin). TFT might lean on statistics outside of the game, but on the Convergence it’s mostly a game of intuition and experience. Math really shouldn’t be the first topic on your mind when you’re already juggling so many other thoughts during your frantic 4-2 rolldown.
+**The original system was very swingy around thresholds.** Previously, excess mana was actively detrimental: you were investing resources into a system that wouldn’t handle overflow, and as such leftover mana went to waste. It created a few weird scenarios that were unintuitive to players, especially those who didn’t look at stats websites to figure out best in slot (BIS). Sure, it was obvious that you should itemize a unit with 30 max mana using Blue Buff, but how about 40? Okay, what about 50? And 45? In each of these cases, there was a technically correct but rather unintuitive answer (if you’re curious, it’s Blue Buff + Shojin, Blue Buff, Shojin). TFT might lean on statistics outside of the game, but on the Convergence it’s mostly a game of intuition and experience. Math really shouldn’t be the first topic on your mind when you’re already juggling so many other thoughts during your frantic 4-2 rolldown.
 
 Let me address a few caveats before moving on.
-- Yes, itemization at the top level has never been about getting exactly BIS for all your units, and it’s technically correct to mostly ignore your perfect items and instead play for acceptable slams to save HP. 
-- Yes, the time until first cast matters more than later casts, especially if a unit has a high impact spell, so breakpoints still exist in a sense. 
-- No, you’d rarely overcap by that much: we’re talking 5, maybe 10 mana you’re wasting per cast if you’re extra unlucky. 
+- **Yes**, itemization at the top level has never been about getting exactly BIS for all your units, and it’s technically correct to mostly ignore your perfect items and instead play for acceptable slams to save HP. 
+- **Yes**, the time until first cast matters more than later casts, especially if a unit has a high impact spell, so breakpoints still exist in a sense. 
+- **No**, you’d rarely overcap by that much: we’re talking 5, maybe 10 mana you’re wasting per cast if you’re extra unlucky. 
 
-Even with all of those in mind, there still exists a non-trivial power difference between mana options that forces commitment in an unsatisfying way. Riot Mort himself has said that he wants to get rid of mana items [link], and I personally agree with him, but the stopgap is to make them less restrictive first. 
+Even with all of those in mind, there still exists a non-trivial power difference between mana options that forces commitment in an unsatisfying way. [Riot Mort himself has said that he wants to get rid of mana items](https://www.youtube.com/watch?v=iGwzv5q-_20), and I personally agree with him, but the stopgap is to make them **less restrictive** first. 
 #### Traits
-The change to mana banking also significantly affects another mana generation source: traits. There have been a number of mana-generating traits throughout TFT’s life: Invoker, Coven, A.D.M.I.N., Scholar, etc. Units with this class are intended to cast repeatedly, and their kits are designed accordingly. However, unbeknownst to newer players, building mana generation items for these champions was often a trap. With some unfortunate timing, the mana generated by these traits might suddenly overcap a unit, leading to a significant amount of wasted mana. 
+The change to mana banking also significantly affects another mana generation source: traits. There have been a number of mana-generating traits throughout TFT’s life: Invoker, Coven, A.D.M.I.N., Scholar, etc. Units with this class are intended to cast repeatedly, and their kits are designed accordingly. However, unbeknownst to newer players, **building mana generation items with these traits was often a trap**. With some unfortunate timing, the mana generated by these traits might suddenly overcap a unit, leading to a significant amount of wasted mana. 
 
 <div>
-  <img src="/assets/6_invoker_lillia_reset_only.png" class="sm:w-5/6 mx-auto" alt="6 invoker Lilla with Shojin">
+  <img src="/assets/6_invoker_lillia_reset_only.png" class="sm:w-7/8 mx-auto" alt="6 invoker Lilla with Shojin">
 </div>
 
 > the shojin doesn’t do anything, i honestly thought it would
 
-The graph above is exaggerated to favor my argument for comedic effect, but the point remains. Mana banking removes this issue entirely: invoker units are allowed to have smaller maximum mana pools and use mana items without their effects completely going to waste. Here’s what that looks like:
+The graph above is exaggerated to favor my argument for comedic effect, but the point remains. **Mana banking removes this issue entirely**: invoker units are allowed to have smaller maximum mana pools and use mana items without their effects completely going to waste. I’ve graphed both the old reset system and the new banked system on the same chart, using a dotted line for the latter. Here’s what that looks like:
 
 <div>
-  <img src="/assets/6_invoker_lillia_banked_vs_reset.png" class="sm:w-5/6 mx-auto" alt="6 invoker Lillia, banked vs. reset">
+  <img src="/assets/6_invoker_lillia_banked_vs_reset.png" class="sm:w-7/8 mx-auto" alt="6 invoker Lillia, banked vs. reset">
 </div>
 
 > the 😳 emoji doesn’t show correctly on matplot saj
@@ -66,27 +64,30 @@ This graph is kinda ass for clarity, but it does simulate what happens. I counte
 
 Notably, even correctly itemized Lillia gets a buff here! If I had to guess, mana items are still low priority on Invoker-type units, but at least you’re not actively wasting an item slot. I’d consider that a positive change.
 ### Gives the balance team a less sensitive lever to tune units
-There’s an additional benefit that’s more dev sided. Let’s illustrate it with an example!
+There’s an additional benefit that’s more **dev sided**. I’ll demonstrate the idea with a scenario, since everyone wants to be on the balance team so badly.
 
-Let’s say that Zoe (Set 11), a unit with a maximum mana of 60 that commonly builds Shojin, is currently dominating the meta. You’re on the Gameplay Analysis Team for TFT, and you’re tasked with finding an appropriate nerf. You’ve determined that the main issue is that Zoe casts too frequently, allowing her to rack up extra bounces on her spell and overwhelm boards in seconds. What should you do?
-- a\) Nerf her max mana.
-- b\) Nerf her starting mana.
-- c\) Nerf her attack speed.
+Let’s say that Zoe (Set 11), a unit with a maximum mana of 60 that commonly builds Shojin, is currently dominating the meta. You’re on the Gameplay Analysis Team for TFT, and you’re tasked with validating an appropriate nerf. You’ve determined that the main issue is that Zoe casts too frequently, allowing her to rack up extra bounces on her spell and overwhelm boards in seconds. What should you do?
 
-In the existing system, option a\) is always incorrect. Even a nerf of 5 extra max mana can have drastic knock-on effects. We can do some dirty back-of-the-napkin math to verify this: if a unit that commonly built Shojin to solve their mana pool of 60 received a mana nerf to 65, they’d require an extra auto to reach max mana, effectively casting 25% slower. If you were to instead use attack speed (AS) as the lever, the roughly equivalent nerf to cast frequency would be a change from 0.75 -> 0.60. 
+&ensp;&ensp;&ensp;&ensp;a\) Nerf her max mana.
+
+&ensp;&ensp;&ensp;&ensp;b\) Nerf her starting mana.
+
+&ensp;&ensp;&ensp;&ensp;c\) Nerf her attack speed.
+
+In the existing system, option a\) is **always incorrect**. Even a nerf of 5 extra max mana can have drastic knock-on effects. We can do some dirty back-of-the-napkin math to verify this: if a unit that commonly built Shojin to solve their mana pool of 60 received a mana nerf to 65, they’d require an extra auto to reach max mana, effectively casting 25% slower. If you were to instead use attack speed (AS) as the lever, the roughly equivalent nerf to cast frequency would be a change from 0.75 -> 0.60. 
 
 <div>
-  <img src="/assets/zoe_5_mana_nerf.png" class="sm:w-5/6 mx-auto" alt="5 mana nerf Zoe comparisons">
+  <img src="/assets/zoe_5_mana_nerf.png" class="sm:w-7/8 mx-auto" alt="5 mana nerf Zoe comparisons">
 </div>
 
 > i’m honestly not sure why 0.60 AS is technically better, but i do know that it doesn’t get an extra cast unless the fight lasts 117 seconds.
 
-I don’t think an explanation is necessary to show that this is a disproportionately large nerf for what feels like a small numbers change. The nerfs are smaller if the unit doesn’t build Shojin, but balance should probably be around the main existing case, not the nonoptimal edge case. With a threshold-centric mana system, mana changes are basically never allowed for caster units. This is the epitome of balance thrashing: a buff of -5 mana usually accomplishes literally nothing to anyone and a nerf of +5 mana is a fate worse than death. I wouldn’t wish such a nerf upon my worst enemy. (Maybe  a small wish on Lux.)
+I don’t think an explanation is necessary to show that this is a disproportionately large nerf for what feels like a small numbers change. The nerfs are smaller if the unit doesn’t build Shojin, but balance should probably be around the main existing case, not the nonoptimal edge case. **With a threshold-centric mana system, mana changes are basically never allowed for caster units.** This is the epitome of balance thrashing: a buff of -5 mana usually accomplishes literally nothing to anyone and a nerf of +5 mana is a fate worse than death. I wouldn’t wish such a nerf upon my worst enemy. (Maybe  a small wish on Lux.)
 
-With the new banking system, the effect of a 5 mana nerf changes significantly!
+With the new banking system, the effect of a 5 mana nerf softens significantly!
 
 <div>
-  <img src="/assets/zoe_5_mana_nerf_banked_vs_reset.png" class="sm:w-5/6 mx-auto" alt="5 mana nerf Zoe banked vs reset">
+  <img src="/assets/zoe_5_mana_nerf_banked_vs_reset.png" class="sm:w-7/8 mx-auto" alt="5 mana nerf Zoe banked vs reset">
 </div>
 
 > this graph might be the least clear of all time i’m sorry, you’ll have to trust me on this one
@@ -95,11 +96,11 @@ The first cast will still be a good bit slower, but subsequent casts happen much
 
 As players, you want the devs to have as easy of a job as possible to make the game fun. As devs, your job gets marginally easier the more useful tools you have at your disposal. It might still be a sensitive lever, but that’s better than a graceless hammer. 
 ## Unit UI additions: Damage Amp and Durability
-Since time immemorial (a little more than five years ago), TFT has had two widely used but untrackable stats: percent damage multiplier (now called “damage amp”) and percent damage reduction (now called “durability”). Durability was introduced first with traits and later on with items, with it currently available on Redemption and Steadfast Heart. Damage amp has been available everywhere, though: items like Deathcap, traits like Sniper, and augments like Ascension all tag on this untrackable stat. This has posed a clarity issue in two parts, both of which I will touch on.
+Since time immemorial (a little more than five years ago), TFT has had two widely used but untrackable stats: **percent damage multiplier** (now called **damage amp**) and **percent damage reduction** (now called **durability**). Durability was introduced first with traits and later on with items, with it currently available on Redemption and Steadfast Heart. Damage amp has been available everywhere: items like Deathcap, traits like Sniper, and augments like Ascension all tag on this untrackable stat. This has posed a clarity issue in two parts, both of which I will touch on.
 ### Estimating board strength
 During combat, players might expect to be able to calculate damage, but with these % damage changes being invisible on the stats sheet, even giving a ballpark estimate ended up being very difficult. Obviously, it’s unreasonable to assume that any players are actually doing the damage calculations in their head, especially given how complicated armor and magic resistance formulas are, but it’s nice to pretend.
 
-What isn’t playing pretend is the practice of estimating board strength. The board strength skill test is one of the hardest parts about playing the game: knowing when you should roll or level based on your board strength is a central decision that every player makes consciously (or not) throughout every game. Damage amp and durability, as invisible but still very impactful stats, makes this task significantly harder. Sure, you might have a rough idea that the enemy Amumu with 2 Porcelain, 4 Warden, Redemption, and Steadfast Heart is quite tanky, but do you know intuitively that the Amumu is taking roughly 64-85% less damage (depending on how the math is done) with all the above fully active? I’d hazard that you don’t, and most players don’t either. The clarity around damage dealable and damage takeable is important to a player’s ability to solve this problem correctly. If the damage system has a significant portion of its parameters hidden from view, this problem becomes much harder than it should be.
+What isn’t playing pretend is the practice of estimating board strength. The board strength skill test is one of the hardest parts of TFT: knowing when you should roll or level based on your board strength is a central decision that every player makes consciously (or not) throughout every game. Damage amp and durability, as invisible but still very impactful stats, makes this task significantly harder. Sure, you might have a rough idea that the enemy Amumu with 2 Porcelain, 4 Warden, Redemption, and Steadfast Heart is quite tanky, but do you know intuitively that the **Amumu is taking roughly 64-85% less damage** (depending on how the math is done) with all the above fully active? I’d hazard that you don’t, and most players don’t either. The clarity around damage dealable and damage takeable is important to a player’s ability to solve this problem correctly. If the damage system has a significant portion of its parameters hidden from view, this problem becomes much harder than it should be.
 ### Multiplicative Scaling in Itemization
 Three years ago, TFT Pro Mismatched Socks posted the following video on [YouTube about itemization and multiplicative scaling](https://www.youtube.com/watch?v=c8UoiWoo_o0). For those who can’t watch, the video talks about how to maximize offensive outputs using a mixture of AD/AP, crit, attack speed, and damage amp. It’s not an exaggeration to say that this was a paradigm-shifting revelation for me. Before, I used to think that one number big = good. Socks instead demonstrated that one number big < many number medium. 
 
@@ -108,8 +109,12 @@ Postmitigation Damage=(\frac{100}{100+Resistance} \cdot Durability) \cdot (Damag
 $$
 > fundamental theorem of damage?
 
-It sounds a bit silly looking back, but it really did open my eyes to the math behind TFT for the first time. With a little math intuition and a calculator to verify the results, it becomes clear that offensive item optimization centers around maximizing damage stats as evenly as possible while synergizing with your units strongest outputs. This isn’t obvious when one of the main multipliers of the damage equation is hidden! If you already knew about this concept, then the reveal of damage amp doesn’t change how you itemize. However, without the knowledge of how damage amp was tracked and calculated, coming to this conclusion requires two jumps in logic, one of which is mostly hidden from the player. It’s simply a net good to reveal this information to players such that they can make informed decisions to their advantage.
+It sounds a bit silly looking back, but it really did open my eyes to the math behind TFT for the first time. With a little math intuition and a calculator to verify the results, it becomes clear that **offensive item optimization centers around maximizing damage stats as evenly as possible** while synergizing with your units strongest outputs. This isn’t obvious when one of the main multipliers of the damage equation is hidden! If you already knew about this concept, then the reveal of damage amp doesn’t change how you itemize. However, without the knowledge of how damage amp was tracked and calculated, coming to this conclusion requires two jumps in logic, one of which is mostly hidden from the player. It’s simply a net benefit to reveal this information to players such that they can use it to better inform their decisions.
 ## Postface
-When I hold design opinions about TFT, I’ve found that being myself is not always the correct answer. I am a (newly) GM peak player who greeds for items and focuses on breadth of knowledge over depth when it comes to climbing. I might be in the target audience for TFT, but I am certainly not the player profile towards which the devs should cater the game. I think it’s generally more important to consider the broader audience: players who think TFT is neat, might want to improve, but find the game’s numerous systems opaque and difficult to learn. To this end, I think TFT is a better game overall if more of the game’s systems are visible and intuitive. I wrote this piece because I think these are both unequivocally good changes, and I think it’s good to express admiration for when good changes are made. Not all yapping has to be negative. Anyways, thanks for reading! 
+When I hold design opinions about TFT, I’ve found that being myself is not always the correct answer. I am a (newly) GM peak player who greeds for items and focuses on breadth of knowledge over depth when it comes to climbing. I might be in the target audience for TFT, but I am certainly not the player profile towards which the devs should cater the game. I think it’s generally more important to consider the **broader audience**: players who think TFT is neat, might want to improve, but find the game’s numerous systems opaque and difficult to learn. To this end, I think TFT is a better game overall if more of the game’s systems are visible and intuitive. I wrote this piece because I think these are both unequivocally good changes, and I think it’s good to express admiration for when good changes are made. Not all yapping has to be negative. 
+
+I’ve included a [Google Colab link (click here)](https://drive.google.com/file/d/1AhkL-jXjJsYPaO5q1shB7CrKl8zWPUxo/view?usp=sharing) if you want to try out the new and not particularly improved mana code. There’s no interface or anything: if you want to work with it, you’ll unfortunately need a bit of Python knowledge. Anyways, thanks for reading! 
+
+
 
 **P.S.** *You might have noticed I have switched mediums! This is because I am a cheapskate. If you’d like to see more from me, there’s a little website for you to explore here. Feel free to click around!*

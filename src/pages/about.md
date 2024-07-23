@@ -9,7 +9,7 @@ The correct question in this frame of reference would be “Who are you?” I ca
 
 Heya, I’m Stephen. You can call me Stephen (Curry, not Hawking), or Steph, or Peachfuzzz, or the other litany of names I have lying around. I have tried on (though perhaps never worn for long) as many hats as I have online aliases. I hail from medicine, I study business, I practice data science, I strive towards game design, and I write. 
 
-I say that like I’m older than dirt, but I’m really just an undergraduate student at NYU Stern. My experience lies primarily in data science, but I’ve been actively interested in game design for years. 
+I say that like I’m older than dirt, but I’m really just an undergraduate student. My experience lies primarily in data science, and I’ve been actively interested in game design for years. 
 
 <div>
   <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
