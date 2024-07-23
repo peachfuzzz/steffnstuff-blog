@@ -9,35 +9,26 @@ The correct question in this frame of reference would be “Who are you?” I ca
 
 Heya, I’m Stephen. You can call me Stephen (Curry, not Hawking), or Steph, or Peachfuzzz, or the other litany of names I have lying around. I have tried on (though perhaps never worn for long) as many hats as I have online aliases. I hail from medicine, I study business, I practice data science, I strive towards game design, and I write. 
 
-I say that like I’m older than dirt, but I’m really just an undergraduate student at NYU Stern. My experience lies primarily in data science, but I’ve been actively interested in game design for years. My life path is probably not what you’re here for, but if you are, I’m flattered! You can check all my career details [on LinkedIn.](https://www.linkedin.com/in/stephen-wu-07b7b319b/) 
-
+I say that like I’m older than dirt, but I’m really just an undergraduate student at NYU Stern. My experience lies primarily in data science, but I’ve been actively interested in game design for years. 
 
 <div>
   <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
 </div>
 
 ## Why does this website exist?
-
 This blog was originally hosted on Notion as a very informal collection of an assortment of ideas. Since then, my desire to appear socially presentable online has won out against my instinct of keeping to myself, and I threw them all onto this site. They’re still not particularly organized—they come from me, and I’m not particularly organized—but you can always use the tag system to look at specific topics.
-
 ## What is this blog about?
-
 I write about things for which I have strong feelings. Opinions, images, ideas, etc. These things tend to center around games, but I’m not opposed to writing beyond games. I just tend not to hold opinions for things I don’t interact with on a daily basis.
-
 ## What do you care about?
-
 - Game design
 - Data science
 - ML/AI
-
 ## What media do you consume?
-
 - Manga
   - Here’s a semi-regularly updating list on what I’ve read that’s been good!
 - Books
 - Some games
   - League of Legends, Teamfight Tactics, modded Minecraft (in that order)
-
 
 If you like this theme, here's my [repo](https://github.com/peachfuzzz/steffnstuff-blog).  
 If you'd like to contact me about anything, feel free to [email me at pearfuzzz@gmail.com](mailto:pearfuzzz@gmail.com).

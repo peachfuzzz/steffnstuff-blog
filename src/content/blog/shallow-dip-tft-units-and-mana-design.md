@@ -7,7 +7,8 @@ featured: true
 draft: false
 tags:
   - TFT
-  - DESIGN
+  - design
+  - shallow dip
 description: "A series of thoughts on TFT and unit mana design."
 ---
 

@@ -6,7 +6,7 @@ slug: manga-recommendations
 featured: true
 draft: false
 tags:
-  - MANGA
+  - manga
 description: "A set of manga that I've read and liked"
 ---
 

@@ -4,6 +4,8 @@ import react from "@astrojs/react";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 import { SITE } from "./src/config";
 
 // https://astro.build/config
@@ -18,7 +20,8 @@ export default defineConfig({
     sitemap(),
   ],
   markdown: {
-    remarkPlugins: [
+    remarkPlugins: 
+      [remarkMath,
       remarkToc,
       [
         remarkCollapse,
@@ -26,6 +29,9 @@ export default defineConfig({
           test: "Table of contents",
         },
       ],
+    ],
+    rehypePlugins: [
+      rehypeKatex
     ],
     shikiConfig: {
       theme: "one-dark-pro",

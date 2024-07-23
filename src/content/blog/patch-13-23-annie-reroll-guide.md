@@ -7,7 +7,7 @@ featured: false
 draft: false
 tags:
   - TFT
-  - GUIDE
+  - guide
 description: "An intermediate TFT guide on piloting Annie reroll, a 1 cost reroll with unique itemization"
 ---
 

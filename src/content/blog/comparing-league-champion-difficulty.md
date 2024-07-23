@@ -6,8 +6,9 @@ slug: comparing-league-champion-difficulty
 featured: true
 draft: false
 tags:
-  - LEAGUE OF LEGENDS
-  - DESIGN
+  - league of legends
+  - design
+  - shallow dip
 description: "A two-axes perspective on execution difficulty in League of Legends"
 ---
 

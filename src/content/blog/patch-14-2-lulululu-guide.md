@@ -7,7 +7,7 @@ featured: true
 draft: false
 tags:
   - TFT
-  - GUIDE
+  - guide
 description: "An intermediate TFT guide on piloting Lulu reroll, an underexplored reroll option"
 ---
 
