@@ -15,11 +15,13 @@ description: "An intermediate TFT guide on piloting Lulu reroll, an underexplore
 
 ## Introduction
 
-<!-- ![Untitled](Patch%2014%202%20Lulululu%20Guide%20103863eaeecf41d8aeef9887f1c4a7a9/Untitled.png) -->
+![Lulu Splash Art](@assets/images/hyperpop_lulu.png)
 
-Heya, Peachfuzzz#NA1 here again. I previously wrote [a guide on Annie reroll in 13.23](https://www.notion.so/Patch-13-23-Annie-Reroll-Guide-2ea35c3c499e4552b840de3abf98f8e1?pvs=21), which got a little traction on Reddit. Still low master, unfortunately, and it might stay this way after writing. I am here again to grief my own climb by posting an unqualified guide on an underplayed comp.
+Heya, Peachfuzzz#NA1 here again. I previously wrote [a guide on Annie reroll in 13.23](/posts/patch-13-23-annie-reroll-guide), which got a little traction on Reddit. Still low master, unfortunately, and it might stay this way after writing. I am here again to grief my own climb by posting an unqualified guide on an underplayed comp.
 
 Do you like carries who cast over and over again? Do you like three costs? Do you like spiking mid game while still having a strong cap? Do you like silly interactions between duplicate units? Do you really, really hate Yone? Well, boy do I have a comp for you! This guide is a writeup of Lulu Reroll, a comp that was probably playable for a few patches but somewhat underexplored until her latest buffs.
+
+## Table of Contents
 
 ## Basic exploration
 
@@ -40,7 +42,7 @@ Lulu is not like Yone or Riven: you do not lose fights early into hitting your 3
 
 Lulu’s optimal fights, much like the notorious Annie reroll, are long extended fights where Lulu casts as much as possible, racking up AP through Spellweaver and chain stunning the enemy frontlines. Unlike Annie however, Lulu’s mana thresholds aren’t _that_ important to hit. Given that Lulu already has [Shojin] from Superfans, the rest of her itemization is relatively flexible: one mana/attack speed and one flex slot. The difference between damage items and even more mana isn’t very large, so don’t fret too much if you don’t get one.
 
-- Mana (Click on the dropdown!)
+- Mana 
   - [Shojin]: comes prepackaged with Superfans! Disco sold separately.
   - [Blue Buff]: Technically better than Shojin. Combined with Shojin, she casts every other auto. Very nice to pursue, but not mandatory.
 - Attack speed
@@ -67,13 +69,14 @@ Lulu also has several distinct outs. The main line is the Superfan Ekko package,
 
 As a three-cost reroll, Lulu is best played from a win streak position. Hold Superfan units. Not only are they used in the main Lulu line, but they also stabilize your board with the extra item.
 
-<!-- ![Screenshot 2024-01-24 at 12.15.06 PM.png](Patch%2014%202%20Lulululu%20Guide%20103863eaeecf41d8aeef9887f1c4a7a9/Screenshot_2024-01-24_at_12.15.06_PM.png) -->
+![Lulu board stage 2](@assets/images/lulu_stage_23.png)
 
 > Figure 1: Luxury opener board.
 
 The Disco opener is also very good! You can play the Disco opener for a long time, even into late stage 3.
 
-<!-- ![Screenshot 2024-01-24 at 12.23.39 PM.png](Patch%2014%202%20Lulululu%20Guide%20103863eaeecf41d8aeef9887f1c4a7a9/Screenshot_2024-01-24_at_12.23.39_PM.png) -->
+![Lulu disco board stage 2](@assets/images/lulu_stage_23_disco.png)
+
 
 > Figure 2: Luxury disco board. Don’t mind the greedy positioning.
 
@@ -87,7 +90,7 @@ Good item holders include Annie, Nami, Bard, Senna, and Katarina. Notably, non-h
 
 Now comes the level 7 rolldown. Ideally, this happens whenever you can reach level 7 with 50 gold, whether that be ahead of tempo on 3-5 or normally on 4-1. You’re looking for this specific board: play whatever extra Spellweavers/front liners you need to fill slots for missing units. I like rolling to 30-ish gold to at least find headliner Lulu, but I think slow rolling for Lulu is probably fine as well.
 
-<!-- ![Untitled](Patch%2014%202%20Lulululu%20Guide%20103863eaeecf41d8aeef9887f1c4a7a9/Untitled%201.png) -->
+![Lulu board stage 3](@assets/images/lulu_stage_3.png)
 
 > Figure 3: Luxury level 7 rolldown board. Positioning is around the K/DA hexes, won’t be the same game-to-game. Replace the second Lulu as necessary.
 
@@ -99,7 +102,7 @@ From there, slow roll above 50 gold to find your Lulus. If you have 7 or 8 copie
 
 After hitting Lulu 3, capping out the board is pretty straightforward. Eventually, you want to add Ahri, Sona, and Ziggs in whichever order you hit them in.
 
-<!-- ![Screenshot 2024-01-25 at 8.08.39 PM.png](Patch%2014%202%20Lulululu%20Guide%20103863eaeecf41d8aeef9887f1c4a7a9/Screenshot_2024-01-25_at_8.08.39_PM.png) -->
+![Lulu board stage 5](@assets/images/lulu_stage_5.png)
 
 Ahri is a great secondary carry, but if you have the opportunity to greed, try and give items to Sona and Ziggs instead. Besides the fact that Sona and Ziggs are 5 costs and inherently more powerful, Sona and Ziggs benefit more from Hyperpop procs and provide something that Lulu herself can lack: AOE damage. Their items aren’t super important: just give them any attack speed/generic AP damage.
 
@@ -127,11 +130,11 @@ Ahri is a great secondary carry, but if you have the opportunity to greed, try a
 
 Lulu has some interesting positioning mechanics due to her spell’s pierce mechanics.
 
-<!-- ![Untitled](Patch%2014%202%20Lulululu%20Guide%20103863eaeecf41d8aeef9887f1c4a7a9/Untitled%202.png) -->
+![Lulu ability](@assets/images/lulu_ability.png)
 
 Note that her regular casts do secondary damage to the unit behind the first target. This isn’t just one space behind; Lulu’s spell continues until it hits a unit, with a decently generous hitbox. Here’s an example:
 
-<!-- ![Untitled](Patch%2014%202%20Lulululu%20Guide%20103863eaeecf41d8aeef9887f1c4a7a9/Untitled%203.png) -->
+![Lulu targeting paradigm](@assets/images/lulu_targeting.png)
 
 > Figure 4: Lulu’s targeting paradigm. Morde takes aggro from Lulu and the primary spell damage and Karthus takes the pierce damage, assuming the units remain in the position above.
 
@@ -146,7 +149,7 @@ Sadly, it’s rare that you can both position Lulu and maximize K/DA value. It�
 
 Play this board at 7:
 
-<!-- ![Untitled](Patch%2014%202%20Lulululu%20Guide%20103863eaeecf41d8aeef9887f1c4a7a9/Untitled%201.png) -->
+![Lulu board tldr](@assets/images/lulu_tldr.png)
 
 Roll for Lulu 3 > Ekko 3 > Neeko 3. If hit Lulu early, push levels.
 
@@ -158,6 +161,4 @@ Always take Hologram, Twin Terror very strong also. Triple combat augment pref
 
 ## Conclusion
 
-Lulu, much like her one-cost Spellweaver counterpart, has a lot of interesting quirks which makes her (in my opinion) a pretty fun reroll unit. Rapid casts are always delightful to watch, and being able to easily fit in the AP 5 costs always gives a board high potential to win lobbies. I don’t think Lulu is game-breakingly strong, but it is something players are sleeping on in terms of strength and consistency. Thanks for reading! If you want to see more from me, here’s a link to the central page.
-
-[Peachfuzzz’s Blog](https://www.notion.so/Peachfuzzz-s-Blog-bbe661cfc74c49c280059518792813ab?pvs=21)
+Lulu, much like her one-cost Spellweaver counterpart, has a lot of interesting quirks which makes her (in my opinion) a pretty fun reroll unit. Rapid casts are always delightful to watch, and being able to easily fit in the AP 5 costs always gives a board high potential to win lobbies. I don’t think Lulu is game-breakingly strong, but it is something players are sleeping on in terms of strength and consistency. Thanks for reading! 

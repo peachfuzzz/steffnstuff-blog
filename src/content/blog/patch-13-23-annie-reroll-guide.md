@@ -13,11 +13,13 @@ description: "An intermediate TFT guide on piloting Annie reroll, a 1 cost rerol
 
 # Introduction
 
-<!-- ![https://preview.redd.it/a2a98d9md5481.jpg?width=1024&auto=webp&s=fde4557474573f09d13091658fab8ef3443b64f1](https://preview.redd.it/a2a98d9md5481.jpg?width=1024&auto=webp&s=fde4557474573f09d13091658fab8ef3443b64f1) -->
+![emo annie splash](@assets/images/annie_splash.jpeg)
 
 Hey there, I’m Peachfuzzz#NA1, a chronic low master player who recently picked up Annie after seeing her weird BIS on various stats websites. After playing 10+ games of her over the span of a few days, I think I have a decent baseline understanding of her various lines, and I thought I might write them up just out of boredom.
 
 Note: This is meant as an entry-level guide, as well as exploring a few different variations of the comp for mid-late game. I’ve only played 30 games over the set (currently in low plat). Take my greedy opinions with a grain of salt.
+
+# Table of Contents
 
 # Core Reasoning
 
@@ -25,11 +27,11 @@ The core reason for why Annie reroll works is in her spell's passive. Basically,
 
 The core units Annie needs are Annie and Amumu. Amumu generally serves as the best tank item holder in Annie reroll boards, due to his innate defensive scaling and Emo synergy trait, as well as being able to obtain him earlier than other alternatives.
 
-<!-- ![Untitled](Patch%2013%2023%20Annie%20Reroll%20Guide%202ea35c3c499e4552b840de3abf98f8e1/Untitled.png) -->
+![annie core](@assets/images/annie_core.png)
 
 Beyond this, your first decision in building a board depends on the chosen trait that Annie has. Right now, Emo Annie has a nicer curve and caps out with 6 Emo if you hit a spat, but Spellweaver is still very strong and should not be passed up.
 
-## Play conditions
+# Play conditions
 
 If you’re like me, every game that you get dropped defensive components + tear/bow/sword looks like an Annie game. If you’re sane or just trying to add a reroll comp into your repertoire, Annie is strongest with an early Annie chosen and any item opener with at least 2 items out of bow, tear, belt, sword. Hitting early super fans is a bonus.
 
@@ -56,7 +58,7 @@ So you got dropped a bow, belt, and tear. Great, you’re one sword away from a 
 
 Save your econ and try to make 10 gold on 2-1. If you don’t hit headliner Annie, that’s still fine. You’ll be playing a lot of shitty boards in stage 2 like the following:
 
-<!-- ![Untitled](Patch%2013%2023%20Annie%20Reroll%20Guide%202ea35c3c499e4552b840de3abf98f8e1/Untitled%201.png) -->
+![annie stage 2](@assets/images/annie_stage2.png)
 
 For now, making econ intervals is the most important. The rule of thumb that I’ve picked up over time is 10 gold by 2-1, 20 gold by 2-3, 30 gold by 2-5, and 40 gold by 2-6. You won’t be able to greed that hard every game, but as long as you full loss streak, take a 3 cost off of carousel, and sell unneeded units, you’re doing fine as long as you hit 5 loss with 30+ gold on 2-6.
 
@@ -70,7 +72,7 @@ The first and most common Annie board variation is a Superfan board, since Super
 
 ### Emo Chosen Level 6 Board (optimal)
 
-<!-- ![Untitled](Patch%2013%2023%20Annie%20Reroll%20Guide%202ea35c3c499e4552b840de3abf98f8e1/Untitled%202.png) -->
+![annie level 6 emo](@assets/images/annie_6_emo.png)
 
 With this board, Annie automatically gets Shojin-Shojin-Nashors, and if you hit a 3 star Annie this board is generally strong enough to streak until mid stage 4. **IMPORTANT: ONLY ANNIE 3 MATTERS!** Do not get baited by Lilia or Kennen or Seraphine. They are merely there as synergy bots and don't actually do anything. If you hit Annie 3, immediately stop rolling and econ back up to push levels. Annie is a 1v9 machine who only needs other units to frontline and stall for her casts.
 
@@ -80,7 +82,7 @@ One thing to note is the lack of Amumu. This is natural: you'll rarely be able t
 
 Let's take a quick detour to look at Spellweaver headliner Annie boards. Your level 6 board is similar, but you just drop Seraphine for Emo instead. Not quite as pretty, but still works very well.
 
-<!-- ![Untitled](Patch%2013%2023%20Annie%20Reroll%20Guide%202ea35c3c499e4552b840de3abf98f8e1/Untitled%203.png) -->
+![annie level 6 spell](@assets/images/annie_6_spell.png)
 
 As the game continues, if at all possible you should try to go 8 before completely all-inning and rolling to 0. This is because Annie boards spike extra hard with the addition of 4 Emo. Prioritize Amumu > Poppy > Vex. If you manage to reach 9, look to add Yorick for 4 Defender + Mosher with Poppy. Both Poppy and Yorick can hold random AD items if you have leftover garbage.
 
@@ -88,7 +90,7 @@ This is an example level 9 board with a bunch of miscellanous items you can thin
 
 ### Generic Level 9 Board (with item suggestions)
 
-<!-- ![Untitled](Patch%2013%2023%20Annie%20Reroll%20Guide%202ea35c3c499e4552b840de3abf98f8e1/Untitled%204.png) -->
+![annie level 9](@assets/images/annie_generic_9.png)
 
 If playing with Spellweaver chosen, replace Seraphine with Vex. The spellweaver chosen board is arguably stronger than the Emo chosen board because Vex is better utility than Seraphine or Ahri. If you get even more mana items, however, feel free to stack Vex/Ahri as a secondary carry.
 
@@ -96,7 +98,7 @@ If playing with Spellweaver chosen, replace Seraphine with Vex. The spellweaver 
 
 Okay, so maybe you’re just a more skilled player and naturally hit your Annie BIS with God-given talent. Or maybe you took an item augment and can now greed a bit. Let’s take a look an example Superfan-free board.
 
-<!-- ![Untitled](Patch%2013%2023%20Annie%20Reroll%20Guide%202ea35c3c499e4552b840de3abf98f8e1/Untitled%205.png) -->
+![annie no superfan](@assets/images/annie_no_superfan.png)
 
 Here’s the trick: a lot of the time, you’ll still be playing Superfans in Stage 3-Early stage 4. It’s just rare to hit your items so early, and you generally want to prioritize frontline items before your second Shojin on Annie regardless. If you do though, Lilia is the least useful unit in that board, so dropping her for Thresh/Yorick is a good idea.
 
@@ -106,11 +108,11 @@ There’s a surprising amount of variation with level 9 capped boards. Let’s l
 
 Without Emo spat (Ziggs/Lulu are free slots depending on Chosen):
 
-<!-- ![Untitled](Patch%2013%2023%20Annie%20Reroll%20Guide%202ea35c3c499e4552b840de3abf98f8e1/Untitled%206.png) -->
+![annie capped 9](@assets/images/annie_capped_9.png)
 
 With Emo spat:
 
-<!-- ![Untitled](Patch%2013%2023%20Annie%20Reroll%20Guide%202ea35c3c499e4552b840de3abf98f8e1/Untitled%207.png) -->
+![annie capped 9 emo spat](@assets/images/annie_capped_spat.png)
 
 Ekko can be any spellweaver, with Lulu as the best alternative. I haven’t personally tried Emo spat on Sona, and I’m sure it’s good, but Emo spat on Thresh is quietly one of the best combos I’ve seen. Being able to stun the enemy team repeatedly when most people aren’t thinking about Thresh’s spell is a huge bonus for a stall comp like Annie.
 
@@ -120,7 +122,7 @@ Other notes: attack speed on Sona is probably the best way to get value out of h
 
 Theoretically, a vertical spellweaver Annie wouldn’t be that bad if you randomly roll into a 3 star Ekko or played 5 spell through midgame. I have very little experience with it, however, so try at your own risk. Here’s an example level 9, 7 spellweaver board:
 
-<!-- ![Untitled](Patch%2013%2023%20Annie%20Reroll%20Guide%202ea35c3c499e4552b840de3abf98f8e1/Untitled%208.png) -->
+![annie spell level 9](@assets/images/annie_spell_9.png)
 
 My main issue with spellweaver is the lack of strong frontliners in the transition from level 5 to level 8/9. If you hit this board, however, it can probably still win out many games purely off of the Sona/Illaoi value. Keep this in the back of your mind when flexing around Annie later in the game.
 
@@ -149,7 +151,3 @@ Honestly, I kinda suck at positioning. This comp plays itself after you hit Anni
 ## Conclusions
 
 Annie is a lot of fun, which came as a surprise to me. I don’t usually like 1 cost reroll (my heart belongs to the wildly inconsistent 3 costs), but set 10’s wide breadth of board variations through the headliner mechanic makes playing Annie reroll a lot more engaging than other historically strong 1 costs. Also, I just like how she machine guns down the enemy team after her first four casts. I’m a simple fellow. Give her a shot in your games if you like reroll which spikes in midgame and caps out to win lobbies!
-
-If you want to see more from me, here’s a link to the central page.
-
-<!-- [Peachfuzzz’s Blog](https://www.notion.so/Peachfuzzz-s-Blog-bbe661cfc74c49c280059518792813ab?pvs=21) -->
