@@ -1,6 +1,6 @@
 ---
 title: Patch 13.23 Annie Reroll Guide
-author: Stephen Wu
+author: Peachfuzzz
 pubDatetime: 2023-09-24T16:30:12.000+00:00
 slug: patch-13-23-annie-reroll-guide
 featured: false

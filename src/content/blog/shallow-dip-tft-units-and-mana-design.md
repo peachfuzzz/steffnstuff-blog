@@ -1,6 +1,6 @@
 ---
 title: "Shallow Dip: TFT Units and Mana Design"
-author: Stephen Wu
+author: Peachfuzzz
 pubDatetime: 2024-06-18T15:06:12.000+00:00
 slug: shallow-dip-tft-units-and-mana-design
 featured: false
@@ -121,4 +121,4 @@ Here's the code. Have at it. [mana.ipynb](https://colab.research.google.com/driv
 
 ## Conclusion
 
-Mana is one of the more unique systems in TFT. Itemization and unit design, as such, is more formalized for mana, being relatively straightforward to model. More recent sets have leaned into mana “classes” to simplify the game and lessen the impact of BIS. This has made mana a particularly interesting system to analyze, and one that I think happens to be pretty elegant and complete. Thanks for reading! 
+Mana is one of the more unique systems in TFT. Itemization and unit design, as such, is more formalized for mana, being relatively straightforward to model. More recent sets have leaned into mana “classes” to simplify the game and lessen the impact of BIS. This has made mana a particularly interesting system to analyze, and one that I think happens to be pretty elegant and complete. Thanks for reading!

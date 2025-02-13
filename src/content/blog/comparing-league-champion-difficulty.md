@@ -1,6 +1,6 @@
 ---
 title: "Shallow Dip: Comparing League champion difficulty"
-author: Stephen Wu
+author: Peachfuzzz
 pubDatetime: 2023-10-26T16:30:12.000+00:00
 slug: comparing-league-champion-difficulty
 featured: false
@@ -29,7 +29,6 @@ This isn’t really a hit against people who make tier lists, but more so an obs
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">My tierlist on difficult champions in league of legends video game. <a href="https://t.co/WszR5VypUB">pic.twitter.com/WszR5VypUB</a></p>&mdash; Veigarv2 (@Veigar_v2) <a href="https://twitter.com/Veigar_v2/status/1499445007694155797?ref_src=twsrc%5Etfw">March 3, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
 VeigarV2 mixes a variety of decision-making and mechanical skill into his tier list, resulting in some more controversial picks (Anivia, Fiddlesticks, Aurelion Sol pre-rework). These aren’t your traditionally super flashy champions, but his arguments hold some ground. There is a ton of nuance in how Anivia can use her wall or how Shaco can manipulate his clone.
 
 Although only regarding top lane, Bwipo makes an interesting addition: he adds a tier which includes champions with unique decision-making required, noting that while they may not be more mechanically difficult than some of the champions they are placed above, they too cannot be piloted by a new player in ranked with consistent success without some prior understanding of the champion’s nuances.
@@ -37,7 +36,6 @@ Although only regarding top lane, Bwipo makes an interesting addition: he adds a
 ### Bwipo tier list
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">try me <a href="https://t.co/95PnBR8uRF">pic.twitter.com/95PnBR8uRF</a></p>&mdash; Bwipo (@Bwipo) <a href="https://twitter.com/Bwipo/status/1655327795965489152?ref_src=twsrc%5Etfw">May 7, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 Personally, I think we should push one step further and abandon tier lists altogether. Mixing the two axes of mechanical skill and decision making reduces the clarity of each argument, and I think a graph with 2 axes, plotting the relative mechanical and decision-making skill required gives us a more nuanced picture of where champions fall in terms of difficulty.
 

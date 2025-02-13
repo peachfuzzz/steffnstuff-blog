@@ -1,6 +1,6 @@
 ---
 title: Patch 14.2 Lulululu Guide
-author: Stephen Wu
+author: Peachfuzzz
 pubDatetime: 2024-01-23T15:55:12.000+00:00
 slug: patch-14-2-lulululu-guide
 featured: true
@@ -42,7 +42,7 @@ Lulu is not like Yone or Riven: you do not lose fights early into hitting your 3
 
 Lulu’s optimal fights, much like the notorious Annie reroll, are long extended fights where Lulu casts as much as possible, racking up AP through Spellweaver and chain stunning the enemy frontlines. Unlike Annie however, Lulu’s mana thresholds aren’t _that_ important to hit. Given that Lulu already has [Shojin] from Superfans, the rest of her itemization is relatively flexible: one mana/attack speed and one flex slot. The difference between damage items and even more mana isn’t very large, so don’t fret too much if you don’t get one.
 
-- Mana 
+- Mana
   - [Shojin]: comes prepackaged with Superfans! Disco sold separately.
   - [Blue Buff]: Technically better than Shojin. Combined with Shojin, she casts every other auto. Very nice to pursue, but not mandatory.
 - Attack speed
@@ -76,7 +76,6 @@ As a three-cost reroll, Lulu is best played from a win streak position. Hold Sup
 The Disco opener is also very good! You can play the Disco opener for a long time, even into late stage 3.
 
 ![Lulu disco board stage 2](@assets/images/lulu_stage_23_disco.png)
-
 
 > Figure 2: Luxury disco board. Don’t mind the greedy positioning.
 
@@ -161,4 +160,4 @@ Always take Hologram, Twin Terror very strong also. Triple combat augment pref
 
 ## Conclusion
 
-Lulu, much like her one-cost Spellweaver counterpart, has a lot of interesting quirks which makes her (in my opinion) a pretty fun reroll unit. Rapid casts are always delightful to watch, and being able to easily fit in the AP 5 costs always gives a board high potential to win lobbies. I don’t think Lulu is game-breakingly strong, but it is something players are sleeping on in terms of strength and consistency. Thanks for reading! 
+Lulu, much like her one-cost Spellweaver counterpart, has a lot of interesting quirks which makes her (in my opinion) a pretty fun reroll unit. Rapid casts are always delightful to watch, and being able to easily fit in the AP 5 costs always gives a board high potential to win lobbies. I don’t think Lulu is game-breakingly strong, but it is something players are sleeping on in terms of strength and consistency. Thanks for reading!

@@ -1,6 +1,6 @@
 ---
 title: "Shallow Dip: Statistically Significant"
-author: Stephen Wu
+author: Peachfuzzz
 pubDatetime: 2025-02-13T14:37:22.873306
 slug: shallow-dip-statistically-significant
 featured: true
